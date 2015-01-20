@@ -560,170 +560,148 @@ ul.nav-menu li:hover > ul, .nav-menu ul li:hover > ul, ul.nav-menu .focus > ul, 
 	}
 }
 
-/* Footer  
-***********************/
-.MxClient_bottomPane {
-	clear: both;
-	overflow: visible;
-	margin-top: 66px;
-	color: #fff;
-	font-size: 14px;
-	background: #015697;
+/**
+* 7.0 Footer
+* ----------------------------------------------------------------------------
+*/
+
+/* License Crap */
+#footer .footer-body {
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+	background-color: #393939;
+	color: #a4a4a3;
+	font-size: 13px;
 }
-#footer {
-	position: relative;
-	padding: 35px 0 0 0;
-	margin: 0 auto;
-	width: 970px;
-	height: 300px;
+#footer .footer-body ul#poweredby,
+p.license-developer {
+	display: none;
+}
+
+.site-footer {
+	background-color: #393939;
+	color: #a4a4a3;
+	font-size: 13px;
+}
+
+.site-footer .widget-area,
+.sidebar .site-footer {
 	text-align: left;
 }
 
-/* JSON Menu */
-.footerMenu {
-	float: left;
-	margin-right: 35px;
-	list-style-type: none;
-}
-.footerMenu:first-child {
-	padding-left: 6px;
-}
-.footerMenu a,
-.footerMenu span {
-	line-height: normal;
-	display: block;
-	margin-bottom: 10px;
-}
-.footerMenu span {
-	font-size: 18px;
+.site-footer a {
+	color: #a4a4a3;
 	font-weight: 600;
 }
-#footer a, 
-#footer a:hover {
+.site-footer a:hover {
+	color: #ea9629 !important;
+}
+
+#footer .footer-body a {
+	color: #a4a4a3;
+}
+
+.site-footer p {
+	margin-bottom: 10px;
+	line-height: normal;
+	font-size: 13px;
+	text-align: left;
+}
+
+.site-footer .sidebar-container {
+	padding: 20px 0;
+}
+
+.site-footer .widget-area {
+	margin: 0 auto;
+	max-width: 1040px;
+	width: 100%;
+}
+
+.sidebar .site-footer .widget-area {
+	max-width: 724px;
+	position: relative;
+	left: -158px;
+}
+
+.footer-top {
+	padding-bottom: 19px;
+	border-bottom: 1px solid #6b6b6b;
+	margin-bottom: 16px;
+	text-align: center;
+}
+.footer-btn {
+	display: inline-block;
+	padding: 3px 20px 3px 49px;
+	border-radius: 21px;
+	-moz-border-radius: 21px;
+	-webkit-border-radius: 21px;
+	height: 36px;
+	color: #fff !important;
+	vertical-align: top;
+	margin: 0 30px 10px 30px;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 36px;
+	transition: all ease .5s;
+	-moz-transition: all ease .5s;
+	-webkit-transition: all ease .5s;
+}
+.footer-btn:hover {
 	color: #fff !important;
 }
-
-/* Dropdown RSS */
-.rssFeedMenu {
-	display: none;
-	z-index: 100;
-	padding: 18px 0 0 0;
-	width: 198px;
-	height: 93px;
-	line-height: 1 !important;
-	background: transparent url(../images/bg-rss-feed-menu.png) top left no-repeat;
+.footer-btn.demo {
+	background: #ff9e00 url(https://developers-test.mendix.com/wp-content/themes/mendix/images/footer-icon-demo.png) 3px 3px no-repeat;
 }
-#footer .rssFeedMenu {
-	position: absolute;
-	top: -72px;
-	right: 117px;
+.footer-btn.start-free {
+	background: #76ca02 url(https://developers-test.mendix.com/wp-content/themes/mendix/images/footer-icon-start.png) 3px 3px no-repeat;
 }
-.rssFeedMenu h1 {
-	margin-bottom: 5px;
-	font-size: 14px;
-	color: #464646;
-	text-align: center;
+.footer-btn.contact {
+	background: #ff9e00 url(https://developers-test.mendix.com/wp-content/themes/mendix/images/footer-icon-contact.png) 3px 3px no-repeat;
 }
-.rssFeedMenu a {
-	line-height: 25px;
-	border-bottom: 1px solid #d4e7f3;
-	font-size: 12px;
-	color: #0192cc !important;
+.footer-btn.demo:hover, .footer-btn.contact:hover {
+	background-color: #76ca02;
+	color: #fff;
 }
-.rssFeedMenu a.closeBlogRSSMenu {
-	position: absolute;
-	top: -2px;
-	right: 7px;
-	color: #464646;
-	border: none;
-	font-weight: 600;
-	font-size: 14px;
+.footer-btn.start-free:hover {
+	background-color: #ff9e00;
+	color: #fff;
 }
-.rssFeedMenu .rssReedLeftColumn {
-	float: left;
-	margin: 0 10px 0 19px;
-	width: 80px;
-	text-align: center;
+#footer .footer-social {
+	padding-right: 0;
 }
-.rssFeedMenu .rssReedRightColumn {
-	float: left;
-	width: 65px;
-	text-align: center;
-}
-
-/* Socialmedia */
-#footer ul.socialmedia {
-	position: absolute;
-	list-style: none;
-	top: 37px;
-	right: 0;
-	width: 350px;
-	height: 40px; 
-}
-#footer ul.socialmedia li a {
-	float: left;
-	height: 40px;
-	width: 40px;
-	margin-right: 17px;
+.footer-social a {
+	float: right;
+	margin-left: 5px;
+	display: inline-block;
 	text-indent: -9999px;
-	background: transparent url(../images/footer-social-media.png) no-repeat;
+	width: 36px;
+	height: 36px;
 }
-#footer ul.socialmedia .facebook a { background-position: 0 0; }
-	#footer ul.socialmedia .facebook a:hover { background-position: 0 -40px; }
-#footer ul.socialmedia .twitter a { background-position: -57px 0; }
-	#footer ul.socialmedia .twitter a:hover { background-position: -57px -40px; }
-#footer ul.socialmedia .rss a { background-position: -172px 0; }
-	#footer ul.socialmedia .rss a:hover { background-position: -172px -40px; }
-#footer ul.socialmedia .youtube a { background-position: -230px 0; }
-	#footer ul.socialmedia .youtube a:hover { background-position: -230px -40px; }
-#footer ul.socialmedia .linkedin a { background-position: -115px 0; }
-	#footer ul.socialmedia .linkedin a:hover { background-position: -115px -40px; }
-#footer ul.socialmedia .googlePlus a { background-position: -287px 0; }
-	#footer ul.socialmedia .googlePlus a:hover { background-position: -287px -40px; }
-
-#footer .rssFeedMenu a {
-	color: #0192cc !important;
+.footer-social a.footer-social--google {
+	background: transparent url(https://developers-test.mendix.com/wp-content/themes/mendix/images/social-google.png) 0 0 no-repeat;
 }
-#footer p {
-	font-size: 12px;
+.footer-social a.footer-social--facebook {
+	background: transparent url(https://developers-test.mendix.com/wp-content/themes/mendix/images/social-facebook.png) 0 0 no-repeat;
 }
-#footer p#footerDescription {
-	position: absolute;
-	top: 105px;
-	left: 619px;
-	width: 325px;
-	line-height: 1.5em;
+.footer-social a.footer-social--linkedin {
+	background: transparent url(https://developers-test.mendix.com/wp-content/themes/mendix/images/social-linkedin.png) 0 0 no-repeat;
 }
-#footer p#footerCopyright {
-	position: absolute;
-	bottom: 4px;
-	right: 0;
+.footer-social a.footer-social--twitter {
+	background: transparent url(https://developers-test.mendix.com/wp-content/themes/mendix/images/social-twitter.png) 0 0 no-repeat;
 }
-#footer #footerCTAs {
-	position: absolute;
-	top: 204px;
-	left: 0;
-	z-index: 10;
+.footer-social a.footer-social--github {
+	background: transparent url(https://developers-test.mendix.com/wp-content/themes/mendix/images/social-github.png) 0 0 no-repeat;
 }
-#footer #footerCTAs a {
-	margin-bottom: 14px;
+.footer-social a:hover {
+	background-position: 0 -36px;
 }
-#footer #footerFish {
-	position: absolute;
-	top: -96px;
-	right: -43px;
-	z-index: 20;
-}
-#footer #footerTryLink {
-	position: absolute;
-	top: -37px;
-	left: 6px;
-	color: #000 !important;
-	font-size: 24px;
-	font-weight: 700;
-}
-#footer #footerTryLink a {
-	color: #000 !important;
+@media (max-width: 1599px) {
+	.site {
+		border: 0;
+	}
 }
 
 /* Tail
