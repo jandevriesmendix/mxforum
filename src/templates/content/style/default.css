@@ -308,7 +308,7 @@ button:active, input[type="submit"]:active, input[type="button"]:active, input[t
 #utilityNav ul li {
 	float: left;
 	padding: 0 20px;
-	background: transparent url(images/utility-nav-divider.png) 100% 3px no-repeat;
+	background: transparent url(../images/utility-nav-divider.png) 100% 3px no-repeat;
 }
 #utilityNav ul li:last-child {
 	padding-right: 4px;
@@ -321,7 +321,7 @@ button:active, input[type="submit"]:active, input[type="button"]:active, input[t
 #utilityNav ul li:first-child a {
 	display: inline-block;
 	padding-left: 16px;
-	background: transparent url(images/bg-home-icon.png) 0 3px no-repeat;
+	background: transparent url(../images/bg-home-icon.png) 0 3px no-repeat;
 }
 .navbar {
 	margin: 0 auto;
