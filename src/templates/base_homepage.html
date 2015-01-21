@@ -63,31 +63,29 @@
         <a class="close-notify" onclick="notify.close(true)">&times;</a>
       </div>
       {% endif %}
+      <div id="page" class="site">
+        {% include "header.html" %}
+             
+        <div id="content">
+          <div id="main" class="site-main">
+            {% block content%}
+            {% endblock%}
+          </div>
 
-        <div id="container">
-             <div id="header">
-                 {% include "header.html" %}
-            </div>
-            <div id="content">
-                <div id="main">
-                    {% block content%}
-                    {% endblock%}
+          <div id="sidebar">
+            {% block sidebar%}
+            {% endblock%}
+          </div>
 
-                </div>
-
-                <div id="sidebar">
-                    {% block sidebar%}
-                    {% endblock%}
-
-                </div>
-                <div id="tail" style="clear:both;">
-                    {% block tail %}
-                    {% endblock %}
-                </div>
-            </div>
+          <div id="tail" style="clear:both;">
+            {% block tail %}
+            {% endblock %}
+          </div>
         </div>
+        
         {% include "footer.html" %}
         {% block endjs %}
         {% endblock %}
+      </div>
     </body>
 </html>
