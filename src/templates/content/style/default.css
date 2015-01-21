@@ -296,6 +296,10 @@ input[type=text] {
   padding-left: 16px;
   background: transparent url(/content/images/bg-home-icon.png) 0 3px no-repeat;
 }
+#utilityNav ul li:last-child {
+  padding-right: 4px;
+  background: transparent;
+}
 .site-header .home-link {
   display: block;
   float: left;
@@ -357,6 +361,7 @@ div.nav-menu > ul {
 .menu-nav-container li ul.sub-menu {
   position: absolute;
   left: 0;
+  margin: 0;
   z-index: 99999;
   visibility: hidden;
   opacity: 0;
