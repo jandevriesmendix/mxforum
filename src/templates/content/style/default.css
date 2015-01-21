@@ -878,7 +878,7 @@ ul.nav-menu .focus > ul,
 	line-height: normal;
 	color: #FFF;
 	border: 1px solid #a7a9aa;
-    background-color: #A7A9AA;
+  background-color: #A7A9AA;
 }
 .nav li.youarehere a { 
 	color: #FFF; 
@@ -895,13 +895,13 @@ ul.nav-menu .focus > ul,
 .nav li a.active,
 .nav li.youarehere a {
 	background-image: none;
-  	outline: 0;
-  	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 .nav #nav_ask a {
 	background: #5CB85C;
-    border-color: #5CB85C;
+  border-color: #5CB85C;
 }
 .nav-rss {
 	position: absolute;
@@ -912,17 +912,17 @@ ul.nav-menu .focus > ul,
 	background: #A7A9AA url(../images/rss-icon.png) no-repeat 10% center;
 }
 .header-notification {
-    font-size: 85%;
-    color: red;
+  font-size: 85%;
+  color: red;
 }
 .highlight-box {
-    border: 1px solid #CCC;
-    color: #555;
-	font-size: 0.750em;
-	line-height: 18px;
-	margin: 12px 0;
-	padding: 10px;
-    background-color: #F1F1F1;
+  border: 1px solid #CCC;
+  color: #555;
+  font-size: 0.750em;
+  line-height: 18px;
+  margin: 12px 0;
+  padding: 10px;
+  background-color: #F1F1F1;
 }
 .highlight-box p { margin: 5px 0 0px 0; }
 .highlight-box a {
@@ -964,8 +964,8 @@ ul.nav-menu .focus > ul,
   background-color: #F1F1F1;	
 }
 .gray-box a.link {
-    color: #0285FF;
-    font-size: 0.750em;
+  color: #0285FF;
+  font-size: 0.750em;
 }
 .gray-box a.link:hover { color: #84755C; }
 .gray-box-bg {
@@ -1060,8 +1060,8 @@ ul.nav-menu .focus > ul,
 }
 #questions-answerbox-cell { padding:5px; }
 .summary {
-    float:right;
-    width:465px;
+  float: right;
+  width: 465px;
 }
 .homepage .summary {
 	width: 740px;
@@ -1149,7 +1149,6 @@ ul.nav-menu .focus > ul,
   border-radius: 8px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
-
 	-moz-transition: opacity 0.2s linear;
 	-webkit-transition: opacity 0.2s linear;
 	-o-transition: opacity 0.2s linear;
@@ -1230,7 +1229,7 @@ ul.nav-menu .focus > ul,
 }
 .badge2 {
 	margin-left:3px;
-    padding-right:2px;
+  padding-right:2px;
 	font-size: 120%;
 	color: #C0C0C0;
 }
@@ -2265,8 +2264,7 @@ td.label {
 		body { background: none; }
 		p { word-break: break-all; }
 		#container { padding: 0 10px; }
-		.menu, #footer, .nav-rss, #Community_Portal, #Visit_Mendix_com, .line, #subNavigationWrapper, #mainNav, #headerTop .theButtons, #header-links { display: none; }
-		
+		.menu, .nav-rss, .line, #subNavigationWrapper, #mainNav, #headerTop .theButtons, #header-links, .main-navigation, .header-buttons { display: none; }
 		#navigation-menu {
 			height: 67px;
 			overflow: visible; 
