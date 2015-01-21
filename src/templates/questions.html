@@ -7,14 +7,15 @@
 {% endblock %}
 {% block content %}
 <div id="main-bar" class="">
-    <h3>{% if searchtag %}Labels{% else %}All questions{% endif %}
-    </h3>
+  <h3>{% if searchtag %}Labels{% else %}All questions{% endif %}</h3>
+  <div id="subheader" class="user-content">
     <div id="tab" class="">
-        <a id="latest" href="?sort=latest" title="Latest questions">Latest</a>
-        <a id="active" href="?sort=active" title="Most active questions">Active</a>
-        <a id="hottest" href="?sort=hottest" title="Hottest questions">Hottest</a>
-        <a id="mostvoted" href="?sort=mostvoted" title="Number of issues to vote">Most voted</a>
+      <a id="latest" href="?sort=latest" title="Latest questions">Latest</a>
+      <a id="active" href="?sort=active" title="Most active questions">Active</a>
+      <a id="hottest" href="?sort=hottest" title="Hottest questions">Hottest</a>
+      <a id="mostvoted" href="?sort=mostvoted" title="Number of issues to vote">Most voted</a>
     </div>
+  </div>
     
 </div>
 <div id="main-body" class="">
@@ -48,7 +49,7 @@
 	        
         </table>
         
-        <div class="questions-summary-container">
+        <div class="questions-summary-container questions-summary-container-overview">
             <div class="qustion-title">
                 <h4>
                     <a href="{{ question.get_absolute_url }}" title="{{ question.summary }}...">
